@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f368384a-e66f-46cb-aa05-8a5865081856" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../module 7/LambdaExpressions/LambdaExpressions.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module 7/TryAirport/TryAirport.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConsoleCustomerList.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CustomerStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1UnoFQnYshMbTUwhcXIj8XSKj7m" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559109403663" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ConsoleCustomerList" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f368384a-e66f-46cb-aa05-8a5865081856" name="Default Changelist" comment="" />
+      <created>1559106634874</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559106634874</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="560" y="71" width="533" height="596" key="#xdebugger.evaluate" timestamp="1576529150084">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="560" y="71" width="533" height="596" key="#xdebugger.evaluate/0.0.1366.738@0.0.1366.738" timestamp="1576529150084" />
+    <state x="430" y="224" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1576529009237">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="430" y="224" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.738@0.0.1366.738" timestamp="1576529009237" />
+    <state width="408" height="438" key="DebuggerActiveHint" timestamp="1576002509472">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="408" height="438" key="DebuggerActiveHint/0.0.1366.738@0.0.1366.738" timestamp="1576002509472" />
+    <state width="1322" height="191" key="GridCell.Tab.0.bottom" timestamp="1576612002794">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1322" height="191" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1576612002794" />
+    <state width="1322" height="191" key="GridCell.Tab.0.center" timestamp="1576612002793">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1322" height="191" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1576612002793" />
+    <state width="1322" height="191" key="GridCell.Tab.0.left" timestamp="1576612002793">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1322" height="191" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1576612002793" />
+    <state width="1322" height="191" key="GridCell.Tab.0.right" timestamp="1576612002793">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1322" height="191" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1576612002793" />
+    <state width="1322" height="221" key="GridCell.Tab.1.bottom" timestamp="1576532037398">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1322" height="221" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1576532037398" />
+    <state width="1322" height="221" key="GridCell.Tab.1.center" timestamp="1576532037397">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1322" height="221" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1576532037397" />
+    <state width="1322" height="221" key="GridCell.Tab.1.left" timestamp="1576532037397">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1322" height="221" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1576532037397" />
+    <state width="1322" height="221" key="GridCell.Tab.1.right" timestamp="1576532037398">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1322" height="221" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1576532037398" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

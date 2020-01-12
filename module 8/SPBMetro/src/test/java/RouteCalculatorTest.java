@@ -1,14 +1,26 @@
 import core.*;
 import junit.framework.TestCase;
-import org.junit.Assert;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class RouteCalculatorTest extends TestCase {
 
     private StationIndex stationIndex;
     private RouteCalculator routeCalculator;
+
+    /**  line - "0"
+     *
+     *      00             20
+     *      |              |
+     *    01/10 -- 11 -- 12/21   line - "1"
+     *      |              |
+     *      02             22
+     *
+     *                 line - "2"
+     */
+
 
     @Override
     protected void setUp() throws Exception {
@@ -56,48 +68,66 @@ public class RouteCalculatorTest extends TestCase {
         }
     }
 
-    public void testGetShortestRoute() {
-        Station from;
-        Station to;
-        List<Station> route;
-        double actual;
-        double expected;
+    public void test_on_single_line() {
+        List<Station> expectedRoute = Arrays.asList(stationIndex.getStation("00"),
+                stationIndex.getStation("01"),
+                stationIndex.getStation("02"));
 
-        // test 1
-        from = stationIndex.getStation("00");
-        to = stationIndex.getStation("02");
-        route = routeCalculator.getShortestRoute(from, to);
-        assertNotNull(route);
-        assertEquals(3, route.size());
+        Station from = stationIndex.getStation("00");
+        Station to = stationIndex.getStation("02");
+        List<Station> actualRoute = routeCalculator.getShortestRoute(from, to);
 
-        actual = RouteCalculator.calculateDuration(route);
-        expected = 5.;
-        assertEquals(expected, actual);
+        assertEquals("[test_on_single_line][getShortestRoute]",
+                expectedRoute, actualRoute);
 
-        // test 2
-        to = stationIndex.getStation("12");
-        route = routeCalculator.getShortestRoute(from, to);
-        assertNotNull(route);
-        assertEquals(5, route.size());
+        double actualDuration = RouteCalculator.calculateDuration(actualRoute);
+        double expectedDuration = 5f;
 
-        actual = RouteCalculator.calculateDuration(route);
-        expected = 11.;
-        assertEquals(expected, actual);
-
-        // test 3
-        to = stationIndex.getStation("20");
-        route = routeCalculator.getShortestRoute(from, to);
-        assertNotNull(route);
-        assertEquals(7, route.size());
-
-        actual = RouteCalculator.calculateDuration(route);
-        expected = 17.;
-        assertEquals(expected, actual);
+        assertEquals("[test_on_single_line][calculateDuration]",
+                expectedDuration, actualDuration);
     }
 
-    public void testCalculateDuration() {
-        double actual = RouteCalculator.calculateDuration(null);
-        double expected = 8.5;
-        assertEquals(expected, actual);
+    public void test_with_one_transfer() {
+        List<Station> expectedRoute = Arrays.asList(stationIndex.getStation("00"),
+                stationIndex.getStation("01"),
+                stationIndex.getStation("10"),
+                stationIndex.getStation("11"),
+                stationIndex.getStation("12"));
+
+        Station from = stationIndex.getStation("00");
+        Station to = stationIndex.getStation("12");
+        List<Station> actualRoute = routeCalculator.getShortestRoute(from, to);
+
+        assertEquals("[test_with_one_transfer][getShortestRoute]",
+                expectedRoute, actualRoute);
+
+        double actualDuration = RouteCalculator.calculateDuration(actualRoute);
+        double expectedDuration = 11f;
+
+        assertEquals("[test_with_one_transfer][calculateDuration]",
+                expectedDuration, actualDuration);
+    }
+
+    public void test_with_double_transfer() {
+        List<Station> expectedRoute = Arrays.asList(stationIndex.getStation("00"),
+                stationIndex.getStation("01"),
+                stationIndex.getStation("10"),
+                stationIndex.getStation("11"),
+                stationIndex.getStation("12"),
+                stationIndex.getStation("21"),
+                stationIndex.getStation("20"));
+
+        Station from = stationIndex.getStation("00");
+        Station to = stationIndex.getStation("20");
+        List<Station> actualRoute = routeCalculator.getShortestRoute(from, to);
+
+        assertEquals("[test_with_double_transfer][getShortestRoute]",
+                expectedRoute, actualRoute);
+
+        double actualDuration = RouteCalculator.calculateDuration(actualRoute);
+        double expectedDuration = 17f;
+
+        assertEquals("[test_with_double_transfer][calculateDuration]",
+                expectedDuration, actualDuration);
     }
 }

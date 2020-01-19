@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="WARN">
+    <appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <File name="MyFile1" fileName="logs/info.log">
+            <MarkerFilter marker="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <File name="MyFile2" fileName="logs/warn.log">
+            <MarkerFilter marker="WARN" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        <File name="MyFile3" fileName="logs/error.log">
+            <MarkerFilter marker="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+    </appenders>
+
+    <loggers>
+        <root level="ALL">
+            <appender-ref ref="Console" level="ALL"/>
+
+            <appender-ref ref="MyFile1" level="INFO"/>
+            <appender-ref ref="MyFile2" level="WARN"/>
+            <appender-ref ref="MyFile3" level="ERROR"/>
+        </root>
+    </loggers>
+</configuration>

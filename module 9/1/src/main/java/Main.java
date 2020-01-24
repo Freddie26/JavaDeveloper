@@ -2,7 +2,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
-import java.nio.file.*;
+import java.nio.file.FileVisitOption;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class Main {
@@ -17,6 +20,8 @@ public class Main {
             try {
                 Path folderPath = Paths.get(scanner.nextLine());
 
+                logger.info("Переданный путь: [{}]", folderPath);
+
                 if (Files.isDirectory(folderPath)) {
                     long folderLength = Files.walk(folderPath, Integer.MAX_VALUE, FileVisitOption.FOLLOW_LINKS)
                             .filter(p -> !Files.isDirectory(p))
@@ -24,7 +29,7 @@ public class Main {
                             .mapToLong(File::length)
                             .sum();
 
-                    logger.info("Размер папки [{}] байт", folderLength);
+                    logger.info("Размер папки [{}]", formatSize(folderLength));
                 } else {
                     logger.warn("Переданный путь [{}] не является директорией!", folderPath);
                 }
@@ -32,5 +37,11 @@ public class Main {
                 logger.error(ex);
             }
         }
+    }
+
+    public static String formatSize(long v) {
+        if (v < 1024) return v + " B";
+        int z = (63 - Long.numberOfLeadingZeros(v)) / 10;
+        return String.format("%.1f %sB", (double)v / (1L << (z * 10)), " KMGTPE".charAt(z));
     }
 }
